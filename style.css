@@ -1,0 +1,80 @@
+h1{
+    color:rgb(23, 27, 27);
+
+  }
+  
+  .links{
+   margin-right:30px;
+   background-color: aqua;
+  }
+  .links a{
+    margin-left:20px;
+  }
+  .item{
+    position:relative
+  }
+  /*position absolute is for absolute position of an element translate is used to move the element to 0,0 co-ordinate of another element */
+  .item p{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform:translate(-50%,-50%);
+   opacity:0;
+
+  }
+  /*when mouse is hovered on p tg in item div the p tag is visible*/
+  .item:hover p{
+    opacity: 1;
+  
+  }
+  /*when mouse is hovered on img tg in item div the img tag is visible*/
+  .item:hover img{
+    opacity: 0.33;
+  }
+
+
+  
+   /*div styles are given by using . before the div name
+   flex helps in organising elements under a div by keeping them horizontol or vertical
+   space-between is used to give as much as posssible space between the elements   */
+  .topsection{
+    padding:50px;
+    
+   background-color: aqua;
+      display:flex;
+      justify-content: space-between;
+  }
+  /*flex-wrap:wrap is used to arrange elements according to screen 
+  space-evenly gives even space between elements of a div*/
+  .games{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content: space-evenly;
+  }
+  /*flex-end is used to arrange the elements in the end of div
+  */
+  .socialmedia{
+      display: flex;
+      justify-content: flex-end;
+  }
+  .sitedescription{
+    display: flex;
+    justify-content: first baseline;
+   flex-direction: column;
+  }
+  /*multiple tags can have same style as follows */
+  p,h3{
+    text-align:center;
+    font-family: cursive;
+    
+    color: chartreuse;
+  }
+ /* a:link is used to change properties of a link*/
+  a:link{
+    color: greenyellow;
+  }
+  /* a:visited is used to change properties of a visited link*/
+    a:visited{
+    color: greenyellow;
+  }
+ 
